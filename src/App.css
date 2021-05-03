@@ -1,3 +1,17 @@
+/* Google font imported */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed:wght@300&display=swap'); 
+
+:root{
+  --primary-white: #fff;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+
 .App {
   text-align: center;
 }
@@ -14,7 +28,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +49,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bg-color{
+  background-color: black !important;
+}
+
+/*********Navbar**********/
+.page-title {
+  width: 16.25rem;
+}
+
+
+/*********Nav-Links**********/
+nav a.nav-link {
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+nav ul li {
+  text-transform: uppercase;  
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+}
+
+.navbar-brand {
+  display: flex !important;
+  align-items: center;
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 4rem !important;
+  color: white !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem !important;
 }
