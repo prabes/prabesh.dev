@@ -1,5 +1,6 @@
 import React from "react";
-import data from "../data";
+import './navbar.css'
+import data from "../../data";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 

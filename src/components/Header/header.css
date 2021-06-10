@@ -1,0 +1,13 @@
+.header-wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 92vh;
+	background: rgb(60, 60, 30, 0.2);
+}
+
+.main-info {
+	display: flex;
+	flex-direction: column;
+	color: white;
+}

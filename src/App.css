@@ -51,39 +51,4 @@ body {
   }
 }
 
-.bg-color{
-  background-color: black !important;
-}
 
-/*********Navbar**********/
-.page-title {
-  width: 16.25rem;
-}
-
-
-/*********Nav-Links**********/
-nav a.nav-link {
-  letter-spacing: 0.6px;
-  cursor: pointer;
-}
-nav ul li {
-  text-transform: uppercase;  
-}
-
-.navbar-nav > li > a {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-  color: var(--primary-white) !important;
-}
-
-.navbar-brand {
-  display: flex !important;
-  align-items: center;
-  max-width: 17.25rem;
-  padding: 0 !important;
-  height: 4rem !important;
-  color: white !important;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 1.75rem !important;
-}

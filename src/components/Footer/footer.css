@@ -1,0 +1,12 @@
+.footer-wrapper {
+	background-color: black;
+	color: white;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 20vh;
+	font-weight: bolder;
+}
