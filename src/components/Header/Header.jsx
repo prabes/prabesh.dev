@@ -1,6 +1,6 @@
-import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Typed from "react-typed";
 import data from "../../data";
 import "./header.css";
 
@@ -32,7 +32,12 @@ const Header = () => {
 							<h2 className={classes.name}>
 								<b>{data.fullName}</b>
 							</h2>
-							<h5>{data.description}</h5>
+							<h5>
+								<Typed
+									strings={[data.description]}
+									typeSpeed={80}
+								/>
+							</h5>
 						</div>
 					</Grid>
 				</Grid>

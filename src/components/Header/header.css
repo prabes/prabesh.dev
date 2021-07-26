@@ -2,8 +2,8 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	height: 91vh;
-	background: rgb(0, 0, 0, 0.4);
+	height: 91.4vh;
+	background: rgba(0, 0, 0, 0.3);
 }
 
 .main-info {
