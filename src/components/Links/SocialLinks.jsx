@@ -15,9 +15,27 @@ const useStyles = makeStyles({
 
 const SocialLink = () => {
 	const classes = useStyles();
+	let url;
 	const handleClick = (link) => {
+		switch (link) {
+			case "twitter":
+				url = "https://twitter.com/_prabes";
+				break;
+			case "linkedIn":
+				url = "https://www.linkedin.com/in/prabesh-dahal-64109814b/";
+				break;
+			case "telegram":
+				url = "https://t.me/prabessh";
+				break;
+			case "github":
+				url = "https://github.com/prabes";
+				break;
+			default:
+				url = "#";
+				break;
+		}
 		// #TODO Use select case here if linkedin is added
-		window.open(`https://${link}.com/cloudrickshaw`);
+		window.open(url);
 	};
 
 	return (
@@ -25,18 +43,24 @@ const SocialLink = () => {
 			<IconButton
 				aria-label="Twitter"
 				onClick={() => handleClick("twitter")}
-				style={{ height: "12px", width: "12px", color: "white" }}
+				style={{
+					height: "12px",
+					width: "12px",
+					color: "ghostwhite",
+				}}
 			>
 				<TwitterIcon />
 			</IconButton>
 			<IconButton
 				aria-label="LinkedIn"
+				onClick={() => handleClick("linkedIn")}
 				style={{ height: "12px", width: "12px", color: "white" }}
 			>
 				<LinkedInIcon />
 			</IconButton>
 			<IconButton
 				aria-label="Telegram"
+				onClick={() => handleClick("telegram")}
 				style={{ height: "12px", width: "12px", color: "white" }}
 			>
 				<TelegramIcon />

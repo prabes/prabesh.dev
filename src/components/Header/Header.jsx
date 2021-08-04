@@ -33,14 +33,12 @@ const Header = () => {
 								<b>{data.fullName}</b>
 							</h2>
 							<h5>
-								<Typed
-									strings={[data.description]}
-									typeSpeed={80}
-								/>
+								<Typed strings={[data.description]} typeSpeed={80} />
 							</h5>
 						</div>
 					</Grid>
 				</Grid>
+				{/* <TechLinks /> */}
 			</div>
 		</div>
 	);

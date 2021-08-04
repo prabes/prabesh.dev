@@ -1,11 +1,9 @@
-import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
-// import CareerTimeline from "./components/CareerTimeline/CareerTimeline";
 import Footer from "./components/Footer/Footer";
-import { makeStyles } from "@material-ui/core/styles";
 import Image from "./assets/images/Homepage.jpg";
 
 const useStyles = makeStyles({
