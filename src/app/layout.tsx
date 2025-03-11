@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
-import Navigation from "@/container/AllBars/Navigation"
+import Navigation from "@/container/AllBars/Navigation";
+
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -10,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "prabesh.dev",
-  description: "Digitally Prabesh!",
+  description: "Prabesh Dahal",
 };
 
 export default function RootLayout({
