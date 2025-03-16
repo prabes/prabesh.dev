@@ -5,9 +5,11 @@ type IconProps = {
   name: string;
   src: string;
   alt?: string;
+  width?: number;
+  height?: number;
 };
 
-function IconComponent({ name, src, alt }: IconProps) {
+function IconComponent({ name, src, alt, width, height }: IconProps) {
   return (
     <div
       className={cn(
@@ -18,8 +20,8 @@ function IconComponent({ name, src, alt }: IconProps) {
       <Image
         src={src}
         alt={alt || name}
-        width={48}
-        height={48}
+        width={width || 48}
+        height={height || 48}
         className="object-contain"
       />
     </div>

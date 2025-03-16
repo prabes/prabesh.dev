@@ -19,7 +19,7 @@ export default function Stack() {
     <div>
       <div className="px-16 pt-8 flex flex-col">
         <span className="text-2xl font-bold">Stack</span>
-        <div>I mostly work with</div>
+        <div className="text-gray-400">I mostly work with</div>
       </div>
       <div className="flex flex-wrap justify-center gap-6 py-6">
         {techStack.map((tech) => (
