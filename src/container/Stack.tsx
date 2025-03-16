@@ -1,21 +1,31 @@
-import React from "react";
+import IconComponent from "@/components/IconComponent";
 
-function Stack() {
+const techStack = [
+  { name: "JavaScript", src: "/logos/javascript.svg" },
+  { name: "TypeScript", src: "/logos/typescript.svg" },
+  { name: "ReactJS", src: "/logos/reactjs.svg" },
+  { name: "NextJS", src: "/logos/nextjs.svg" },
+  { name: "NodeJS", src: "/logos/nodejs.svg" },
+  { name: "NestJS", src: "/logos/nestjs.svg" },
+  { name: "PostgreSQL", src: "/logos/postgresql.svg" },
+  { name: "Web3", src: "/logos/web3.svg" },
+  //{ name: "Docker", src: "/logos/solana.svg" },
+  // { name: "Solidity", src: "/logos/solidity.svg" },
+  //{ name: "Ruby on Rails", src: "/logos/rails.svg" },
+];
+
+export default function Stack() {
   return (
-    <section>
-      <div className="px-8 py-8 flex flex-wrap justify-around">
-        <div>JavaScript</div>
-        <div>Typescript</div>
-        <div>ReactJs</div>
-        <div>NextJs</div>
-        <div>NodeJs</div>
-        <div>NestJs</div>
-        <div>PostgreSQL</div>
-        <div>Web3</div>
-        <div>RubyOnRails</div>
+    <div>
+      <div className="px-16 pt-8 flex flex-col">
+        <h3 className="font-bold">Stack</h3>
+        <div>I mostly work with</div>
       </div>
-    </section>
+      <div className="flex flex-wrap justify-center gap-6 py-6">
+        {techStack.map((tech) => (
+          <IconComponent key={tech.name} name={tech.name} src={tech.src} />
+        ))}
+      </div>
+    </div>
   );
 }
-
-export default Stack;
