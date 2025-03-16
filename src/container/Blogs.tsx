@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function Blogs() {
   return (
     <section>
-
-    <div>Featured Blogs</div>
-    <div> Read My Latest Stories</div>
+      <div className="px-16 pt-8 flex flex-col">
+        <span className="text-2xl font-bold">Featured Blogs</span>
+        <div>Read My Latest Stories</div>
+      </div>
     </section>
-  )
+  );
 }
 
-export default Blogs  
+export default Blogs;

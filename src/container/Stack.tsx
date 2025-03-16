@@ -18,7 +18,7 @@ export default function Stack() {
   return (
     <div>
       <div className="px-16 pt-8 flex flex-col">
-        <h3 className="font-bold">Stack</h3>
+        <span className="text-2xl font-bold">Stack</span>
         <div>I mostly work with</div>
       </div>
       <div className="flex flex-wrap justify-center gap-6 py-6">
