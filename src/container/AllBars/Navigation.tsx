@@ -14,7 +14,7 @@ const Navigation = ({ children }) => {
         </div>
 
         {/* Fixed Sidebar (Hidden on <lg screens) */}
-        <div className="hidden lg:flex w-[100px] h-screen fixed left-1/2 translate-x-[520px] border-l-2 border-gray-700">
+        <div className="flex items-center hidden lg:flex w-[100px] h-screen fixed left-1/2 translate-x-[520px] border-l-2 border-gray-700">
           <Sidebar />
         </div>
 
