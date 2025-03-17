@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="flex gap-y-4 flex-col flex-grow justify-center">
         {navLinks.map((navLink: INavLink) => {
           return (
-            <div className="text-end">
+            <div className="text-end" key={navLink.name}>
               <IconComponent
                 key={navLink.name}
                 name={navLink.name}
@@ -35,7 +35,7 @@ export default function Navbar() {
           key={"uparrow"}
           name={"uparrow"}
           src={"/logos/uparrow.svg"}
-       width={18} 
+          width={18}
         />
       </div>
     </div>

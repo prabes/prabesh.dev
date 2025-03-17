@@ -16,12 +16,12 @@ const Sidebar = () => {
       <div className="flex gap-y-3 flex-col flex-grow justify-center">
         {socialLinks.map((socialLink) => {
           return (
-            <div className="text-start">
+            <div className="text-start" key={socialLink.name}>
               <IconComponent
                 key={socialLink.name}
                 name={socialLink.name}
                 src={socialLink.logoSrc}
-                width={32}
+                width={24}
               />
             </div>
           );
