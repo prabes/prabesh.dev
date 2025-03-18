@@ -6,7 +6,7 @@ import Topbar from "./Topbar";
 import Navbar from "./Navbar";
 import Footer from "./FooterBar";
 
-const Navigation = ({ children }) => {
+const Navigation: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="flex justify-self-center max-w-6xl p-6 md:p-2 h-screen overflow-hidden">
       <div className="hidden md:flex border-r border-neutral-800">

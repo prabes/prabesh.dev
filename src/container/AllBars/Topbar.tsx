@@ -3,7 +3,7 @@
 import React from "react";
 import { MapPin } from "@deemlol/next-icons";
 
-const Topbar = (props: {}) => {
+const Topbar = () => {
   return (
     <section className=" p-6 flex flex-start overflow-y-auto scrollbar-hide ">
       <div className="w-full flex flex-col items-start md:flex-row justify-between items-end">

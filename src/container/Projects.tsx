@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { P } from "@/components/Typography";
 const Projects = () => {
   return (
     <section id="projects">

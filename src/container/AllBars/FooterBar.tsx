@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Footer = (props: {}) => {
+const Footer = () => {
   return (
     <section id="footer" className="">
       <div className="flex justify-start md:justify-end p-6">
