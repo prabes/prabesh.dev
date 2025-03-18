@@ -27,9 +27,6 @@ body {
   color: var(--foreground);
 }
 
-
-
-
 @layer base {
   h1 {
     @apply text-4xl font-bold;
@@ -43,4 +40,14 @@ body {
   p {
     @apply text-base;
   }
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

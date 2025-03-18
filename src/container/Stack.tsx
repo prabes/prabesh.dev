@@ -1,3 +1,5 @@
+"use client";
+
 import IconComponent from "@/components/IconComponent";
 
 const techStack = [
@@ -16,8 +18,8 @@ const techStack = [
 
 export default function Stack() {
   return (
-    <div>
-      <div className="px-16 pt-8 flex flex-col">
+    <section id="stack">
+      <div className="px-4 pt-8 flex flex-col">
         <span className="text-2xl font-bold">Stack</span>
         <div className="text-gray-400">I mostly work with</div>
       </div>
@@ -26,6 +28,6 @@ export default function Stack() {
           <IconComponent key={tech.name} name={tech.name} src={tech.src} />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

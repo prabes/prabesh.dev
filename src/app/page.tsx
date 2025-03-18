@@ -6,11 +6,11 @@ import Blogs from "@/container/Blogs";
 
 export default function Home() {
   return (
-    <section className="p-12">
+    <section className="sm:p-6  lg:p-12">
       <Hero />
       <Stack />
-      {/* <Projects /> */}
-      {/* <Blogs /> */}
+      {/* <Projects />
+      <Blogs /> */}
     </section>
   );
 }

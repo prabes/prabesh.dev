@@ -1,3 +1,7 @@
+
+
+"use client";
+
 import IconComponent from "@/components/IconComponent";
 
 const navLinks = [
@@ -14,9 +18,9 @@ interface INavLink {
 
 export default function Navbar() {
   return (
-    <div className=" p-8 h-screen flex flex-col">
+    <div className=" md:p-8 h-screen flex flex-col">
       <div className="text-end">Logo</div>
-      <div className="flex gap-y-4 flex-col flex-grow justify-center">
+      {/* <div className="flex gap-y-4 flex-col flex-grow justify-center">
         {navLinks.map((navLink: INavLink) => {
           return (
             <div className="text-end" key={navLink.name}>
@@ -29,7 +33,7 @@ export default function Navbar() {
             </div>
           );
         })}
-      </div>
+      </div>    
       <div className="text-end">
         <IconComponent
           key={"uparrow"}
@@ -38,6 +42,7 @@ export default function Navbar() {
           width={18}
         />
       </div>
+ */}
     </div>
   );
 }
